@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  genremicroservice:
+    image: ${DOCKER_REGISTRY-}genremicroservice
+    build:
+      context: .
+      dockerfile: GenreMicroservice\Dockerfile
